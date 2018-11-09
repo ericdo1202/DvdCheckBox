@@ -44,7 +44,7 @@ The current version supports 2 different checkboxes:
 ## Example
 <img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
   
-import DVDCheckBox
+    import DVDCheckBox
 
     class ViewController: UIViewController {
       @IBOutlet weak var checkBox: DVDCheckBox!
