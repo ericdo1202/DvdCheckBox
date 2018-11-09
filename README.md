@@ -40,7 +40,7 @@ actionHandler | Update callback when checkbox select
 ## Example
 <img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
   
-  override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         checkBox.titleText = "Checkbox 1"
