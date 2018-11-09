@@ -1,0 +1,4 @@
+framework module DVDCheckBox {
+  header "DVDCheckBox-Swift.h"
+  requires objc
+}
