@@ -14,7 +14,7 @@ The current version supports 2 different checkboxes:
 ## Installation
 ---- Manual ----
 - Just drag the DVDCheckBox.framework to your project.
-- Import the checkbox class you want to use.
+- Import the DVDCheckBox module to class you want to use.
 
 ## How to use 
 - Drag a UIView to storyboard and extend DVDCheckBox from your view.
@@ -40,14 +40,20 @@ actionHandler | Update callback when checkbox select
 ## Example
 <img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
   
-  checkBox.titleText = "Checkbox 1"
-  checkbox2.titleText = "Checkbox 2"
-  checkBox.actionHandler = {(isSelceted)->() in
-      print("Check box 1 IsSelected: \(isSelceted)")
-  }
-  checkbox2.actionHandler = {(isSelceted)->() in
-      print("Check box 2 IsSelected: \(isSelceted)")
-  }
+  override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        checkBox.titleText = "Checkbox 1"
+        checkbox2.titleText = "Checkbox 2"
+        checkBox.actionHandler = {(isSelceted)->() in
+            print("Check box 1 IsSelected: \(isSelceted)")
+        }
+        
+        checkbox2.actionHandler = {(isSelceted)->() in
+            print("Check box 2 IsSelected: \(isSelceted)")
+        }
+        
+    }
 
 ## Demo
 There is a demo project added to this repository, so you can see how it works.
