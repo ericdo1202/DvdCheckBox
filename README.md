@@ -8,6 +8,10 @@ The current version supports 2 different checkboxes:
 
   - Left checkbox
 
+## Support
+  - Swift 4.x
+  - iOS Deployment target 9.0 and above
+  
 ## Result
 ![simulator screen shot - iphone xr - 2018-11-10 at 00 16 19](https://user-images.githubusercontent.com/15991780/48277904-9a449c00-e47e-11e8-9c15-d0fb9f6d3a7a.png)
 
@@ -36,6 +40,11 @@ The current version supports 2 different checkboxes:
       imgWidth | Change checkbox image with size 
       imgHeight | Change checkbox image height size 
       actionHandler | Update callback when checkbox select 
+      
+     First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 ## Example
 <img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
