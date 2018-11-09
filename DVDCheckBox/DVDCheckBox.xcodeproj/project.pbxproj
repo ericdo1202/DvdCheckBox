@@ -71,8 +71,6 @@
 		E2C10CA02195A0EA00CA1D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C10CAA2195A13500CA1D4D /* DVDCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDCheckBox.swift; sourceTree = "<group>"; };
 		E2C10CAC2195A17B00CA1D4D /* DVDCheckBox.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DVDCheckBox.xib; sourceTree = "<group>"; };
-		E2C10CB22195A1CF00CA1D4D /* DVDCheckBox_Universal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DVDCheckBox_Universal.metal; sourceTree = "<group>"; };
-		E2C10CBD2195A3C000CA1D4D /* DVDCheckBox_Universal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DVDCheckBox_Universal.metal; sourceTree = "<group>"; };
 		E2C10CD52195A78800CA1D4D /* DVDCheckBoxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDCheckBoxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C10CD72195A78800CA1D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C10CD92195A78800CA1D4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,8 +132,6 @@
 			children = (
 				E2C10C922195A0EA00CA1D4D /* DVDCheckBox */,
 				E2C10C9D2195A0EA00CA1D4D /* DVDCheckBoxTests */,
-				E2C10CB12195A1CF00CA1D4D /* DVDCheckBox-Universal */,
-				E2C10CBC2195A3C000CA1D4D /* DVDCheckBox-Universal */,
 				E2C10CD62195A78800CA1D4D /* DVDCheckBoxExample */,
 				E2C10CEB2195A78900CA1D4D /* DVDCheckBoxExampleTests */,
 				E2C10CF62195A78900CA1D4D /* DVDCheckBoxExampleUITests */,
@@ -175,22 +171,6 @@
 				E2C10CA02195A0EA00CA1D4D /* Info.plist */,
 			);
 			path = DVDCheckBoxTests;
-			sourceTree = "<group>";
-		};
-		E2C10CB12195A1CF00CA1D4D /* DVDCheckBox-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				E2C10CB22195A1CF00CA1D4D /* DVDCheckBox_Universal.metal */,
-			);
-			path = "DVDCheckBox-Universal";
-			sourceTree = "<group>";
-		};
-		E2C10CBC2195A3C000CA1D4D /* DVDCheckBox-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				E2C10CBD2195A3C000CA1D4D /* DVDCheckBox_Universal.metal */,
-			);
-			path = "DVDCheckBox-Universal";
 			sourceTree = "<group>";
 		};
 		E2C10CD62195A78800CA1D4D /* DVDCheckBoxExample */ = {

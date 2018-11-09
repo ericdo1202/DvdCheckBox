@@ -19,19 +19,19 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
     
     @IBInspectable var animationDuration:CGFloat = 0.0
 
-    @IBInspectable var unSelectImgName:UIImage?{
+    @IBInspectable var unSelectImage:UIImage?{
         didSet{
-            iconRightImg.image = unSelectImgName
-            iconLeftImg.image = unSelectImgName
+            iconRightImg.image = unSelectImage
+            iconLeftImg.image = unSelectImage
             imageAnimation()
         }
         
     }
     
-    @IBInspectable var selectImgName:UIImage?{
+    @IBInspectable var selectImage:IImage?{
         didSet{
-            iconRightImg.highlightedImage = selectImgName
-            iconLeftImg.highlightedImage = selectImgName
+            iconRightImg.highlightedImage = selectImage
+            iconLeftImg.highlightedImage = selectImage
             imageAnimation()
         }
         
