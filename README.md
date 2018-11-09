@@ -23,24 +23,30 @@ The current version supports 2 different checkboxes:
 - Drag outlet of your DVDCheckBox component from storyboard.
 - You can set the following properties on every data object:
 
-  Property | What does it do
------------- | -------------
-animationDuration | Set animation checkbox status changed
-unSelectImage | Set un select image of checkbox
-selectImage | Set select image of checkbox
-isSelected | Change checkbox status
-isLeft | Change style checkbox (left, right)
-fontSize | Change font size of title 
-textColor | Change color of title 
-titleText | Change text of title 
-imgWidth | Change checkbox image with size 
-imgHeight | Change checkbox image height size 
-actionHandler | Update callback when checkbox select 
+       Property | What does it do
+      ------------ | -------------
+      animationDuration | Set animation checkbox status changed
+      unSelectImage | Set un select image of checkbox
+      selectImage | Set select image of checkbox
+      isSelected | Change checkbox status
+      isLeft | Change style checkbox (left, right)
+      fontSize | Change font size of title 
+      textColor | Change color of title 
+      titleText | Change text of title 
+      imgWidth | Change checkbox image with size 
+      imgHeight | Change checkbox image height size 
+      actionHandler | Update callback when checkbox select 
 
 ## Example
 <img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
   
-    override func viewDidLoad() {
+import DVDCheckBox
+
+    class ViewController: UIViewController {
+      @IBOutlet weak var checkBox: DVDCheckBox!
+      @IBOutlet weak var checkbox2: DVDCheckBox!
+    
+      override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         checkBox.titleText = "Checkbox 1"
@@ -53,7 +59,10 @@ actionHandler | Update callback when checkbox select
             print("Check box 2 IsSelected: \(isSelceted)")
         }
         
+      }
+
     }
+
 
 ## Demo
 There is a demo project added to this repository, so you can see how it works.
