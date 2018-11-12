@@ -28,7 +28,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
-    @IBInspectable var selectImage:IImage?{
+    @IBInspectable var selectImage:UIImage?{
         didSet{
             iconRightImg.highlightedImage = selectImage
             iconLeftImg.highlightedImage = selectImage

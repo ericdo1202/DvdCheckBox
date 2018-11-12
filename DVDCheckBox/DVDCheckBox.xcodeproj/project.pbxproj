@@ -21,8 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E20AEC4B219940240032495B /* DVDCheckBox.swift in Headers */ = {isa = PBXBuildFile; fileRef = E2C10CAA2195A13500CA1D4D /* DVDCheckBox.swift */; };
+		E20AEC4C219940300032495B /* DVDCheckBoxProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E20C979B2195E48000C07D57 /* DVDCheckBoxProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		E20C979C2195E48000C07D57 /* DVDCheckBoxProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C979B2195E48000C07D57 /* DVDCheckBoxProtocol.swift */; };
-		E20C979E2195E58D00C07D57 /* DVDCheckBoxProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E20C979B2195E48000C07D57 /* DVDCheckBoxProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2C10C9A2195A0EA00CA1D4D /* DVDCheckBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C10C902195A0EA00CA1D4D /* DVDCheckBox.framework */; };
 		E2C10C9F2195A0EA00CA1D4D /* DVDCheckBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C10C9E2195A0EA00CA1D4D /* DVDCheckBoxTests.swift */; };
 		E2C10CAB2195A13500CA1D4D /* DVDCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C10CAA2195A13500CA1D4D /* DVDCheckBox.swift */; };
@@ -218,7 +219,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20C979E2195E58D00C07D57 /* DVDCheckBoxProtocol.swift in Headers */,
+				E20AEC4C219940300032495B /* DVDCheckBoxProtocol.swift in Headers */,
+				E20AEC4B219940240032495B /* DVDCheckBox.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
