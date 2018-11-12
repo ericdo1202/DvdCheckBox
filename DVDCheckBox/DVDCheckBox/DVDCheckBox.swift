@@ -42,6 +42,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
             iconRightImg.isHighlighted = isSelected
             iconLeftImg.isHighlighted = isSelected
             checkBoxBtn.isSelected = isSelected
+            titleLbl.isHighlighted = isSelected
             imageAnimation()
         }
     }
@@ -71,9 +72,16 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         }
     }
     
-    @IBInspectable var textColor:UIColor = .black{
+    @IBInspectable var textColorSelect:UIColor = .black{
         didSet{
-            titleLbl.textColor =  textColor
+            titleLbl.highlightedTextColor =  textColorSelect
+        }
+        
+    }
+    
+    @IBInspectable var textColorUnselect:UIColor = .black{
+        didSet{
+            titleLbl.textColor =  textColorUnselect
         }
         
     }
