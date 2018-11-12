@@ -43,6 +43,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImage" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImage" value="set_icon_check"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0B-RY-AlZ" customClass="DVDCheckBox" customModule="DVDCheckBox">
@@ -68,6 +70,8 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLeft" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImage" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImage" value="set_icon_check"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-VM-W3t">
@@ -79,11 +83,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyK-Nt-CsF" customClass="DVDCheckBox" customModule="DVDCheckBox">
-                                <rect key="frame" x="95" y="39" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
