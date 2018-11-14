@@ -15,11 +15,14 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
     @IBOutlet weak var imgLeftHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imgRightHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imgRightWithConstraint: NSLayoutConstraint!
-    @IBOutlet weak var checkBoxBtn: UIButton!
-    
-    @IBInspectable var animationDuration:CGFloat = 0.0
+    @IBOutlet public weak var checkBoxBtn: UIButton!
+    @IBOutlet weak var titleLbl: CustomLabel!
+    @IBOutlet weak var iconRightImg: UIImageView!
+    @IBOutlet weak var iconLeftImg: UIImageView!
 
-    @IBInspectable var unSelectImage:UIImage?{
+    @IBInspectable public var animationDuration:CGFloat = 0.0
+
+    @IBInspectable public var unSelectImage:UIImage?{
         didSet{
             iconRightImg.image = unSelectImage
             iconLeftImg.image = unSelectImage
@@ -28,7 +31,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
-    @IBInspectable var selectImage:UIImage?{
+    @IBInspectable public var selectImage:UIImage?{
         didSet{
             iconRightImg.highlightedImage = selectImage
             iconLeftImg.highlightedImage = selectImage
@@ -41,13 +44,15 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         didSet{
             iconRightImg.isHighlighted = isSelected
             iconLeftImg.isHighlighted = isSelected
-            checkBoxBtn.isSelected = isSelected
+            if checkBoxBtn.isSelected != isSelected{
+                checkBoxBtn.isSelected = isSelected
+                imageAnimation()
+            }
             titleLbl.isHighlighted = isSelected
-            imageAnimation()
         }
     }
     
-    @IBInspectable var isLeft: Bool = false{
+    @IBInspectable public var isLeft: Bool = false{
         didSet{
             if isLeft{
                 imgRightWithConstraint.constant = 0
@@ -66,20 +71,22 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
-    @IBInspectable var fontSize:CGFloat = 15.0{
+    @IBInspectable public var isRadio: Bool = false
+    
+    @IBInspectable public var fontSize:CGFloat = 15.0{
         didSet{
             titleLbl.font = UIFont.systemFont(ofSize: fontSize)
         }
     }
     
-    @IBInspectable var textColorSelect:UIColor = .black{
+    @IBInspectable public var textColorSelect:UIColor = .black{
         didSet{
             titleLbl.highlightedTextColor =  textColorSelect
         }
         
     }
     
-    @IBInspectable var textColorUnselect:UIColor = .black{
+    @IBInspectable public var textColorUnselect:UIColor = .black{
         didSet{
             titleLbl.textColor =  textColorUnselect
         }
@@ -93,7 +100,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
-    @IBInspectable var imgWidth:CGFloat = 50.0 {
+    @IBInspectable public var imgWidth:CGFloat = 50.0 {
         didSet{
             imgLeftWidthConstraint.constant = imgWidth
             imgRightWithConstraint.constant = imgWidth
@@ -101,7 +108,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         }
     }
     
-    @IBInspectable var imgHeight:CGFloat = 50.0 {
+    @IBInspectable public var imgHeight:CGFloat = 50.0 {
         didSet{
             imgLeftHeightConstraint.constant = imgHeight
             imgRightHeightConstraint.constant = imgHeight
@@ -122,9 +129,6 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var iconRightImg: UIImageView!
-    @IBOutlet weak var iconLeftImg: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -154,6 +158,11 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
     }
     
     @IBAction func checkBoxAction(_ sender: Any) {
+        let button = sender as! UIButton
+        if button.isSelected  && isRadio{
+            return
+        }
+        
         isSelected = !isSelected
         actionHandler?(isSelected)
     }

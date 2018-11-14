@@ -44,11 +44,19 @@
                                 <constraint firstAttribute="height" constant="50" id="hoo-Yb-XBa"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKo-pX-mqo">
-                            <rect key="frame" x="54" y="0.0" width="267" height="55"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKo-pX-mqo" customClass="CustomLabel" customModule="DVDCheckBox" customModuleProvider="target">
+                            <rect key="frame" x="50" y="0.0" width="275" height="55"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-3e-40x">
                             <rect key="frame" x="0.0" y="2.5" width="50" height="50"/>
@@ -60,11 +68,11 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="BKo-pX-mqo" firstAttribute="leading" secondItem="2GK-3e-40x" secondAttribute="trailing" constant="4" id="4EE-Jo-Y8i"/>
+                        <constraint firstItem="BKo-pX-mqo" firstAttribute="leading" secondItem="2GK-3e-40x" secondAttribute="trailing" id="4EE-Jo-Y8i"/>
                         <constraint firstAttribute="bottom" secondItem="owt-GW-8h8" secondAttribute="bottom" id="6P3-zv-geJ"/>
                         <constraint firstItem="owt-GW-8h8" firstAttribute="top" secondItem="5Gt-pS-1lY" secondAttribute="top" id="8Sa-nP-gV5"/>
                         <constraint firstItem="2GK-3e-40x" firstAttribute="leading" secondItem="5Gt-pS-1lY" secondAttribute="leading" id="Gnk-cj-E6B"/>
-                        <constraint firstItem="myl-cP-uM1" firstAttribute="leading" secondItem="BKo-pX-mqo" secondAttribute="trailing" constant="4" id="MIs-FV-f5T"/>
+                        <constraint firstItem="myl-cP-uM1" firstAttribute="leading" secondItem="BKo-pX-mqo" secondAttribute="trailing" id="MIs-FV-f5T"/>
                         <constraint firstAttribute="trailing" secondItem="myl-cP-uM1" secondAttribute="trailing" id="QHc-jG-O6l"/>
                         <constraint firstAttribute="trailing" secondItem="owt-GW-8h8" secondAttribute="trailing" id="QJs-T6-xIa"/>
                         <constraint firstItem="myl-cP-uM1" firstAttribute="centerY" secondItem="5Gt-pS-1lY" secondAttribute="centerY" id="Qe6-yG-ZqT"/>

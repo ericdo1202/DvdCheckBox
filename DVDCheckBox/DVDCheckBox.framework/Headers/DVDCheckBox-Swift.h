@@ -184,8 +184,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC11DVDCheckBox11CustomLabel")
+@interface CustomLabel : UILabel
+- (void)drawTextInRect:(CGRect)rect;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIImage;
+@class UIColor;
+
 SWIFT_CLASS("_TtC11DVDCheckBox11DVDCheckBox")
 @interface DVDCheckBox : UIView
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkBoxBtn;
+@property (nonatomic) CGFloat animationDuration;
+@property (nonatomic, strong) UIImage * _Nullable unSelectImage;
+@property (nonatomic, strong) UIImage * _Nullable selectImage;
+@property (nonatomic) BOOL isLeft;
+@property (nonatomic) BOOL isRadio;
+@property (nonatomic) CGFloat fontSize;
+@property (nonatomic, strong) UIColor * _Nonnull textColorSelect;
+@property (nonatomic, strong) UIColor * _Nonnull textColorUnselect;
+@property (nonatomic) CGFloat imgWidth;
+@property (nonatomic) CGFloat imgHeight;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)layoutSubviews;

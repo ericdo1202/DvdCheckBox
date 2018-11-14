@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-9L-Dyh" customClass="DVDCheckBox" customModule="DVDCheckBox">
-                                <rect key="frame" x="72" y="318.5" width="231" height="50"/>
+                                <rect key="frame" x="72" y="212" width="231" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="erP-2N-IW9"/>
                                     <constraint firstAttribute="height" constant="50" id="gg8-ZM-CXy"/>
@@ -48,7 +48,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0B-RY-AlZ" customClass="DVDCheckBox" customModule="DVDCheckBox">
-                                <rect key="frame" x="72" y="376.5" width="231" height="50"/>
+                                <rect key="frame" x="72" y="270" width="231" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="TPO-o2-ASw"/>
                                     <constraint firstAttribute="height" constant="50" id="iCE-Ly-9IO"/>
@@ -74,7 +74,7 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="selectImage" value="set_icon_check"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-VM-W3t">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-VM-W3t" customClass="CustomLabel" customModule="DVDCheckBox">
                                 <rect key="frame" x="71" y="175" width="233.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="esy-2j-QxK"/>
@@ -83,6 +83,74 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eS-yr-dK6" customClass="CustomLabel" customModule="DVDCheckBox">
+                                <rect key="frame" x="105" y="384" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6Eq-KA-zWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vi2-wV-Xae" customClass="DVDCheckBox" customModule="DVDCheckBox">
+                                <rect key="frame" x="72" y="413" width="231" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YaB-bP-beq"/>
+                                    <constraint firstAttribute="width" constant="231" id="pR3-Gr-OIP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImgName" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImgName" value="set_icon_check"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Mr.Robo"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imgWidth">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imgHeight">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImage" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImage" value="set_icon_check"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRadio" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THv-Ql-f9v" customClass="DVDCheckBox" customModule="DVDCheckBox">
+                                <rect key="frame" x="72" y="471" width="231" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="QRo-55-24i"/>
+                                    <constraint firstAttribute="height" constant="50" id="Rlj-o5-oc1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImgName" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImgName" value="set_icon_check"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Mr.Robo"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imgWidth">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imgHeight">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unSelectImage" value="set_icon_uncheck"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectImage" value="set_icon_check"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRadio" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -90,14 +158,22 @@
                             <constraint firstItem="H0B-RY-AlZ" firstAttribute="top" secondItem="Hrs-9L-Dyh" secondAttribute="bottom" constant="8" id="3pI-wr-k97"/>
                             <constraint firstItem="jVa-VM-W3t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="65c-R3-PNb"/>
                             <constraint firstItem="H0B-RY-AlZ" firstAttribute="centerX" secondItem="Hrs-9L-Dyh" secondAttribute="centerX" id="AUX-tQ-oeC"/>
-                            <constraint firstItem="Hrs-9L-Dyh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="X5I-Hz-hAj"/>
+                            <constraint firstItem="9eS-yr-dK6" firstAttribute="top" secondItem="H0B-RY-AlZ" secondAttribute="bottom" constant="64" id="LNB-Fc-9cK"/>
+                            <constraint firstItem="THv-Ql-f9v" firstAttribute="top" secondItem="vi2-wV-Xae" secondAttribute="bottom" constant="8" id="OG5-4v-Nua"/>
+                            <constraint firstItem="vi2-wV-Xae" firstAttribute="centerX" secondItem="9eS-yr-dK6" secondAttribute="centerX" id="Uut-1Z-0sK"/>
+                            <constraint firstItem="vi2-wV-Xae" firstAttribute="top" secondItem="9eS-yr-dK6" secondAttribute="bottom" constant="8" id="aMN-ed-hxN"/>
+                            <constraint firstItem="9eS-yr-dK6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jGz-me-hUu"/>
+                            <constraint firstItem="Hrs-9L-Dyh" firstAttribute="top" secondItem="jVa-VM-W3t" secondAttribute="bottom" constant="16" id="mZh-UD-KRs"/>
                             <constraint firstItem="Hrs-9L-Dyh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nan-hW-yH5"/>
+                            <constraint firstItem="THv-Ql-f9v" firstAttribute="centerX" secondItem="vi2-wV-Xae" secondAttribute="centerX" id="sGY-hv-nLO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="checkBox" destination="Hrs-9L-Dyh" id="Q1B-kc-lTq"/>
                         <outlet property="checkbox2" destination="H0B-RY-AlZ" id="4Zb-fx-7GT"/>
+                        <outlet property="radio1" destination="vi2-wV-Xae" id="IQV-8w-fDa"/>
+                        <outlet property="radio2" destination="THv-Ql-f9v" id="CZW-CD-pwg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

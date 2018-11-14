@@ -19,5 +19,4 @@ public protocol DVDCheckBoxProtocol {
     
     /// Text of title
     var titleText:String? {get set}
-
 }
