@@ -7,13 +7,16 @@ The current version supports 2 different checkboxes:
   - Right checkbox
 
   - Left checkbox
+  
+ The current version supports radio option
+
 
 ## Support
   - Swift 4.x
   - iOS Deployment target 9.0 and above
   
 ## Result
-![simulator screen shot - iphone xr - 2018-11-10 at 00 16 19](https://user-images.githubusercontent.com/15991780/48277904-9a449c00-e47e-11e8-9c15-d0fb9f6d3a7a.png)
+![simulator screen shot - iphone xr - 2018-11-14 at 23 16 15](https://user-images.githubusercontent.com/15991780/48495866-70ff8380-e863-11e8-9056-4370fde3765c.png)
 
 ## Installation
 ---- Manual ----
@@ -40,17 +43,21 @@ The current version supports 2 different checkboxes:
      | imgWidth | Change checkbox image with size |
      | imgHeight | Change checkbox image height size |
      | actionHandler | Update callback when checkbox select |
+     | isRadio | Enable radio option |
+
 
 ## Example
-<img width="1127" alt="screen shot 2018-11-10 at 12 22 21 am" src="https://user-images.githubusercontent.com/15991780/48277938-b6e0d400-e47e-11e8-995a-81006385b59d.png">
+<img width="1131" alt="screen shot 2018-11-14 at 11 19 46 pm" src="https://user-images.githubusercontent.com/15991780/48496080-d0f62a00-e863-11e8-891b-7c3a75ab1458.png">
   
     import DVDCheckBox
 
     class ViewController: UIViewController {
-      @IBOutlet weak var checkBox: DVDCheckBox!
-      @IBOutlet weak var checkbox2: DVDCheckBox!
+    @IBOutlet weak var checkBox: DVDCheckBox!
+    @IBOutlet weak var checkbox2: DVDCheckBox!
+    @IBOutlet weak var radio1: DVDCheckBox!
+    @IBOutlet weak var radio2: DVDCheckBox!
     
-      override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         checkBox.titleText = "Checkbox 1"
@@ -63,9 +70,22 @@ The current version supports 2 different checkboxes:
             print("Check box 2 IsSelected: \(isSelceted)")
         }
         
-      }
-
+        radio1.titleText = "Radio 1"
+        radio2.titleText = "Radio 2"
+        radio1.actionHandler = {(isSelceted)->() in
+            print("Radio 1 IsSelected: \(isSelceted)")
+            self.radio2.isSelected = false
+        }
+        
+        radio2.actionHandler = {(isSelceted)->() in
+            print("Radio 2 IsSelected: \(isSelceted)")
+            self.radio1.isSelected = false
+        }
+        
     }
+
+
+}
 
 
 ## Demo
