@@ -20,13 +20,13 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
     @IBOutlet weak var iconRightImg: UIImageView!
     @IBOutlet weak var iconLeftImg: UIImageView!
 
-    @IBInspectable public var animationDuration:CGFloat = 0.0
+    var animationDuration:CGFloat = 0.5
 
     @IBInspectable public var unSelectImage:UIImage?{
         didSet{
             iconRightImg.image = unSelectImage
             iconLeftImg.image = unSelectImage
-            imageAnimation()
+//            imageAnimation()
         }
         
     }
@@ -35,7 +35,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         didSet{
             iconRightImg.highlightedImage = selectImage
             iconLeftImg.highlightedImage = selectImage
-            imageAnimation()
+//            imageAnimation()
         }
         
     }
@@ -46,7 +46,9 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
             iconLeftImg.isHighlighted = isSelected
             if checkBoxBtn.isSelected != isSelected{
                 checkBoxBtn.isSelected = isSelected
-                imageAnimation()
+                if isSelected{
+                    imageAnimation()
+                }
             }
             titleLbl.isHighlighted = isSelected
         }
