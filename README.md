@@ -27,7 +27,7 @@ The current version supports 2 different checkboxes:
 - Drag a UIView to storyboard and extend DVDCheckBox from your view.
 - Set some property if you want on storyboard
 - Import the DVDCheckBox module to your class.
-- Drag outlet of your DVDCheckBox component from storyboard.
+- Drag outlet your DVDCheckBox component from storyboard.
 - You can set the following properties on every data object:
 
      | Property | What does it do |
