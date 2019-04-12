@@ -16,7 +16,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
     @IBOutlet weak var imgRightHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imgRightWithConstraint: NSLayoutConstraint!
     @IBOutlet public weak var checkBoxBtn: UIButton!
-    @IBOutlet weak var titleLbl: CustomLabel!
+    @IBOutlet public weak var titleLbl: CustomLabel!
     @IBOutlet weak var iconRightImg: UIImageView!
     @IBOutlet weak var iconLeftImg: UIImageView!
 
@@ -60,14 +60,24 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
                 imgRightWithConstraint.constant = 0
                 imgRightHeightConstraint.constant = 0
                 iconRightImg.isHidden = true
-                titleLbl.textAlignment = .left
+                if NSLocale.characterDirection(forLanguage: NSLocale.preferredLanguages[0]) == .rightToLeft {
+                    titleLbl.textAlignment = .right
+                }else{
+                    titleLbl.textAlignment = .left
+                }
             }else{
                 imgLeftHeightConstraint.constant = 0
                 imgLeftWidthConstraint.constant = 0
                 iconLeftImg.isHidden = true
-                titleLbl.textAlignment = .right
-
+                if NSLocale.characterDirection(forLanguage: NSLocale.preferredLanguages[0]) == .rightToLeft {
+                    titleLbl.textAlignment = .left
+                }else{
+                    titleLbl.textAlignment = .right
+                }
             }
+            
+            
+            
             layoutIfNeeded()
         }
         
