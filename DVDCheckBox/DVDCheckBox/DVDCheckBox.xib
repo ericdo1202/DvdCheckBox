@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,7 +22,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -47,7 +46,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKo-pX-mqo" customClass="CustomLabel" customModule="DVDCheckBox" customModuleProvider="target">
                             <rect key="frame" x="50" y="0.0" width="275" height="55"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
@@ -68,18 +67,19 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="BKo-pX-mqo" firstAttribute="leading" secondItem="2GK-3e-40x" secondAttribute="trailing" id="4EE-Jo-Y8i"/>
+                        <constraint firstAttribute="bottom" secondItem="BKo-pX-mqo" secondAttribute="bottom" id="6O2-62-sWp"/>
                         <constraint firstAttribute="bottom" secondItem="owt-GW-8h8" secondAttribute="bottom" id="6P3-zv-geJ"/>
+                        <constraint firstItem="myl-cP-uM1" firstAttribute="leading" secondItem="BKo-pX-mqo" secondAttribute="trailing" id="6PX-3M-KfN"/>
                         <constraint firstItem="owt-GW-8h8" firstAttribute="top" secondItem="5Gt-pS-1lY" secondAttribute="top" id="8Sa-nP-gV5"/>
                         <constraint firstItem="2GK-3e-40x" firstAttribute="leading" secondItem="5Gt-pS-1lY" secondAttribute="leading" id="Gnk-cj-E6B"/>
-                        <constraint firstItem="myl-cP-uM1" firstAttribute="leading" secondItem="BKo-pX-mqo" secondAttribute="trailing" id="MIs-FV-f5T"/>
+                        <constraint firstItem="BKo-pX-mqo" firstAttribute="top" secondItem="5Gt-pS-1lY" secondAttribute="top" id="NRs-o9-wOR"/>
+                        <constraint firstItem="BKo-pX-mqo" firstAttribute="centerY" secondItem="5Gt-pS-1lY" secondAttribute="centerY" id="OJe-OL-0xl"/>
                         <constraint firstAttribute="trailing" secondItem="myl-cP-uM1" secondAttribute="trailing" id="QHc-jG-O6l"/>
                         <constraint firstAttribute="trailing" secondItem="owt-GW-8h8" secondAttribute="trailing" id="QJs-T6-xIa"/>
                         <constraint firstItem="myl-cP-uM1" firstAttribute="centerY" secondItem="5Gt-pS-1lY" secondAttribute="centerY" id="Qe6-yG-ZqT"/>
-                        <constraint firstItem="BKo-pX-mqo" firstAttribute="top" secondItem="5Gt-pS-1lY" secondAttribute="top" id="SvP-OP-Gj5"/>
                         <constraint firstItem="owt-GW-8h8" firstAttribute="leading" secondItem="5Gt-pS-1lY" secondAttribute="leading" id="VrE-gK-4TV"/>
+                        <constraint firstItem="BKo-pX-mqo" firstAttribute="leading" secondItem="2GK-3e-40x" secondAttribute="trailing" id="Xgn-Pp-uRi"/>
                         <constraint firstItem="2GK-3e-40x" firstAttribute="centerY" secondItem="5Gt-pS-1lY" secondAttribute="centerY" id="ciR-nG-Ybm"/>
-                        <constraint firstAttribute="bottom" secondItem="BKo-pX-mqo" secondAttribute="bottom" id="s9T-1a-9UF"/>
                     </constraints>
                 </view>
             </subviews>
@@ -87,11 +87,10 @@
             <constraints>
                 <constraint firstItem="5Gt-pS-1lY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Etd-q4-6tb"/>
                 <constraint firstAttribute="bottom" secondItem="5Gt-pS-1lY" secondAttribute="bottom" id="Rwt-zn-nJt"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Gt-pS-1lY" secondAttribute="trailing" id="Ur7-hu-fyo"/>
-                <constraint firstItem="5Gt-pS-1lY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dHP-Vq-E5B"/>
+                <constraint firstAttribute="trailing" secondItem="5Gt-pS-1lY" secondAttribute="trailing" id="Ur7-hu-fyo"/>
+                <constraint firstItem="5Gt-pS-1lY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dHP-Vq-E5B"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="130.40000000000001" y="137.18140929535232"/>
         </view>
     </objects>

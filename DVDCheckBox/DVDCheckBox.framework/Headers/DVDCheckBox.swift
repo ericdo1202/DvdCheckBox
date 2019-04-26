@@ -78,7 +78,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
             
             
             
-            layoutIfNeeded()
+//            layoutIfNeeded()
         }
         
     }
@@ -116,7 +116,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         didSet{
             imgLeftWidthConstraint.constant = imgWidth
             imgRightWithConstraint.constant = imgWidth
-            layoutIfNeeded()
+//            layoutIfNeeded()
         }
     }
     
@@ -124,7 +124,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         didSet{
             imgLeftHeightConstraint.constant = imgHeight
             imgRightHeightConstraint.constant = imgHeight
-            layoutIfNeeded()
+//            layoutIfNeeded()
         }
     }
     
