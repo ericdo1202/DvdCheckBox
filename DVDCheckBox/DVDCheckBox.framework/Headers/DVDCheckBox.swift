@@ -47,7 +47,7 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
             if checkBoxBtn.isSelected != isSelected{
                 checkBoxBtn.isSelected = isSelected
                 if isSelected{
-                    imageAnimation()
+                   // imageAnimation()
                 }
             }
             titleLbl.isHighlighted = isSelected
