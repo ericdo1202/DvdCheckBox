@@ -94,7 +94,7 @@ There is a demo project added to this repository, so you can see how it works.
 ## License
 MIT License
 
-Copyright (c) 2018 mrrobo1510
+Copyright (c) 2018 mrrobo1510 (Duoc Do)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
