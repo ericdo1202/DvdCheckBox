@@ -40,6 +40,19 @@ public class DVDCheckBox: UIView, DVDCheckBoxProtocol {
         
     }
     
+    public var isEnable:Bool = true{
+        didSet{
+            if isEnable {
+                self.alpha = 1
+                self.isUserInteractionEnabled = true
+            }else{
+                self.alpha = 0.5
+                self.isUserInteractionEnabled = false
+            }
+        }
+        
+    }
+    
     public var isSelected:Bool = false{
         didSet{
             iconRightImg.isHighlighted = isSelected

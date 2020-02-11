@@ -40,6 +40,8 @@ class ViewController: UIViewController {
             self.radio1.isSelected = false
         }
         
+        checkBox.isEnable = false
+        
     }
 
 
